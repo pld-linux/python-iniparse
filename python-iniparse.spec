@@ -33,10 +33,15 @@ rm -rf $RPM_BUILD_ROOT
 %py_comp $RPM_BUILD_ROOT%{py_sitescriptdir}
 %py_postclean
 
+rm -rf $RPM_BUILD_ROOT%{_docdir}/iniparse-%{version}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{py_sitescriptdir}/iniparse-%{version}-py*.egg-info
+%doc Changelog README
 %{py_sitescriptdir}/iniparse
+%if "%{py_ver}" > "2.4"
+%{py_sitescriptdir}/iniparse-*.egg-info
+%endif
