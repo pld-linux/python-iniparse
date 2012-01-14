@@ -1,10 +1,10 @@
 Summary:	Python Module for Accessing and Modifying Configuration Data in INI files
 Name:		python-iniparse
-Version:	0.3.1
-Release:	3
+Version:	0.4
+Release:	1
 Group:		Development/Libraries
 Source0:	http://iniparse.googlecode.com/files/iniparse-%{version}.tar.gz
-# Source0-md5:	94adcf1cf01e2a537491a18f2e9b7a7a
+# Source0-md5:	5e573e9e9733d97623881ce9bbe5eca6
 License:	MIT
 URL:		http://code.google.com/p/iniparse/
 BuildRequires:	python-modules
