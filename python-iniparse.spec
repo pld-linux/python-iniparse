@@ -7,6 +7,7 @@ Source0:	http://iniparse.googlecode.com/files/iniparse-%{version}.tar.gz
 # Source0-md5:	5e573e9e9733d97623881ce9bbe5eca6
 License:	MIT
 URL:		http://code.google.com/p/iniparse/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python-modules
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
